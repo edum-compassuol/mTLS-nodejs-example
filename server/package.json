@@ -1,0 +1,21 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "servera.js",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2"
+  },
+  "scripts": {
+    "deva": "NODE_ENV=a ts-node-dev --inspect --transpile-only --ignore-watch node_modules src/server.ts",
+    "devb": "NODE_ENV=b ts-node-dev --inspect --transpile-only --ignore-watch node_modules src/server.ts",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.3"
+  }
+}
