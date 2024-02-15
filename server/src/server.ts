@@ -10,10 +10,10 @@ const app = express()
 const route = Router()
 dotenv.config({ path: `.env.${process.env.NODE_ENV}`});
 
-const hostname = process.env.SERVER_HOSTNAME
-const port = process.env.SERVER_HTTP_PORT
-const portSsl = process.env.SERVER_HTTPS_PORT
-const portMTLS = process.env.SERVER_MTLS_PORT
+const hostname = String(process.env.SERVER_HOSTNAME)
+const port = Number(process.env.SERVER_HTTP_PORT)
+const portSsl = Number(process.env.SERVER_HTTPS_PORT)
+const portMTLS = Number(process.env.SERVER_MTLS_PORT)
 const ca = String(process.env.SERVER_CA)
 const serverCert = String(process.env.SERVER_CERT)
 const serverCertSigned = String(process.env.SERVER_CERT_SIGNED)
@@ -44,6 +44,7 @@ route.get('/health', (req: Request, res: Response) => {
 })
 
 route.get('/pong', (req: Request, res: Response) => {
+  console.log("Ping received" )
   res.json({ message: `Pong from ${req.headers.host}`, secure: req.secure })
 })
 
