@@ -18,21 +18,21 @@ Protocolo de Segurança para comunicação segura entre duas partes sobre a inte
 
 ### Para que serve TLS?
 
-![Figura http vs https](./presentation/diferencas-entre-http-e-https.webp "Figura http vs https")
+<img src="./presentation/diferencas-entre-http-e-https.webp" alt="Figura http vs https" style="margin: 5px">
 
 ### Como funciona o TLS?
 
 Normalmente em TLS, o servidor tem um certificado TLS e um par de chaves pública/privada, mas o cliente não tem.  
 O processo típico do TLS funciona assim:​
 
-![Figura funcionamento TLS](./presentation/how_tls_works-what_is_mutual_tls.png "Figura funcionamento TLS")
+<img src="./presentation/how_tls_works-what_is_mutual_tls.png" alt="Figura funcionamento TLS" style="background-color: white; padding: 10px">
 
 ### Como funciona o mTLS?
 
 No mTLS, tanto o cliente quanto o servidor têm um certificado e ambos os lados autenticam usando seu par de chaves pública/privada.  
 O processo típico do mTLS funciona assim:​
 
-![Figura funcionamento mTLS](./presentation/how_mtls_works-what_is_mutual_tls.png "Figura funcionamento mTLS")
+<img src="./presentation/how_mtls_works-what_is_mutual_tls.png" alt="Figura funcionamento mTLS" style="background-color: white; padding: 10px">
 
 ## Hands on
 
